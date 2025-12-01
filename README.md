@@ -1,5 +1,5 @@
 # Traditional vs Deep Learning Image Fusion Methods: Comparative Analysis
-
+This project systematically implemented three typical infrared and visible light image fusion methods（Wavelet transform, power-law transform and RFN-Nest） and provided a complete quantitative evaluation tool to compare the performance differences between traditional methods and deep learning methods in image fusion tasks.
 ## 📊 Performance Comparison Tables
 
 ### Table 1: Objective Metrics Comparison of Three Image Fusion Methods
@@ -38,33 +38,7 @@
 | **Software** | IDE | PyCharm |
 |           | Platform | Python 3.7, PyTorch 1.5 |
 
-### Table 4: Optical Aberrations and Their Effects
-
-| Aberration Type | Core Problem | Effect on Real Photos |
-|-----------------|--------------|------------------------|
-| **Spherical Aberration** | Marginal and paraxial rays focus at different points | Overall image **blurriness**, **reduced contrast**, similar to out-of-focus |
-| **Coma** | Off-axis point sources appear comet-shaped | Point light sources at edges (e.g., stars) **elongate into pear-shaped or comet-like** blobs |
-| **Astigmatism** | Tangential and sagittal focal lines separate | **Ghosting** or **blurring** at object edges, lines in different directions cannot be simultaneously sharp |
-| **Field Curvature** | The image plane is curved, not flat | **Center and edges cannot be in focus simultaneously**, straight lines at edges may curve |
-| **Distortion** | Geometric distortion of the image | **Straight lines curve** (barrel: inward, pincushion: outward, mustache: mixed) |
-
-### Table 5: MTF (Modulation Transfer Function) Fundamentals
-
-| Concept | Explanation | Plain Language Analogy |
-|---------|-------------|------------------------|
-| **MTF Value (0-1)** | Ratio of output to input contrast | **Test score** - higher is better |
-| **Unit: lp/mm** | Line pairs per millimeter | **Test difficulty** - higher number = finer details |
-| **Radial/Tangential** | Different orientation measurements | **Specialized tests** - checks for "astigmatism" in the lens |
-| **Measurement Method** | Analyzing black-white line patterns | Reading an "eye chart" with increasingly small letters |
-
-### Table 6: Dense Connection vs Traditional Connection
-
-| Architecture | Information Flow | Analogy | Advantages |
-|--------------|------------------|---------|------------|
-| **Traditional Network** | Sequential: A → B → C | Assembly line | Simple structure |
-| **Dense Connection** | All-to-all: C sees [A, B] | Brainstorming session | Feature reuse, gradient flow, detail preservation |
-
-### Table 7: Multi-scale Feature Extraction in RFN-Nest
+### Table 4: Multi-scale Feature Extraction in RFN-Nest
 
 | Feature Level | Content | Analogy | Handled by |
 |---------------|---------|---------|------------|
@@ -72,7 +46,7 @@
 | **Middle (Φ², Φ³)** | Medium structures: contours, shapes | "Normal view" | RFN₂, RFN₃ |
 | **Deep (Φ⁴)** | Semantic content: objects, categories | "Thumbnail view" | RFN₄ (Semantic Specialist) |
 
-### Table 8: Code Volume Comparison (Approximate)
+### Table 5: Code Volume Comparison (Approximate)
 
 | Method | Description | Approximate Lines | Components |
 |--------|-------------|-------------------|------------|
@@ -180,7 +154,6 @@
 - GitHub Repository: https://github.com/Rango-shao/Methods-Comparison
 - TNO Dataset: https://figshare.com/articles/TNO_Image_Fusion_Dataset/1008029
 - LLVIP Dataset: https://github.com/bupt-ai-cz/LLVIP
-- PyWavelets Library: https://pywavelets.readthedocs.io
 
 ---
 
