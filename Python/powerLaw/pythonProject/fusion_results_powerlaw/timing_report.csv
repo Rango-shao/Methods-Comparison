@@ -1,0 +1,4 @@
+pair,ir_path,vis_path,time_ms,output
+1,ir_grey/IR1.jpg,vis_grey/VIS1.jpg,13.999299999999993,fusion_results_powerlaw\fused_01.jpg
+2,ir_grey/IR4.jpg,vis_grey/VIS4.jpg,13.61030000000002,fusion_results_powerlaw\fused_02.jpg
+3,ir_grey/IR18.jpg,vis_grey/VIS18.jpg,13.568799999999936,fusion_results_powerlaw\fused_03.jpg
